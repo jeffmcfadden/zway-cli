@@ -15,7 +15,7 @@ end.parse!
 # p options
 # p ARGV
 
-zway = ZWay::Client.new
+zway = ZWay::Cli::Client.new
 zway.load_config!
 
 # puts "Aliases:"

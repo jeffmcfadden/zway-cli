@@ -3,7 +3,7 @@ require 'net/http'
 require 'json'
 require 'yaml'
 
-module Zway
+module ZWay
   module Cli
     class Client
 
