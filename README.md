@@ -1,5 +1,7 @@
 # Zway::Cli
 
+A command line utility for controlling a ZWay server, like the one I'm running off a [Razberry](http://razberry.z-wave.me). zway-cli can be used with any other command line tools (like `cron`, etc.) to leverage automation of your devices.
+
 ## Installation
 
 Install it yourself:
