@@ -36,7 +36,7 @@ Or if you setup aliases:
 2.  Click on the Rooms icon at the top
 3.  Go to the room your device is in
 4.  Click the Gear icon on the card for your device
-5.  Find the "Element Name" in the Configuration View
+5.  Find the "Element ID" in the Configuration View
 
 ## Other Notes
 
