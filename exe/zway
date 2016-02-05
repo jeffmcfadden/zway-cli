@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'zway'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: bin.rb [options]"
+
+  opts.on("-v", "--[no-]verbose", "Run verbosely") do |v|
+    options[:verbose] = v
+  end
+end.parse!
+
+# p options
+# p ARGV
+
+zway = ZWay::Client.new
+zway.load_config!
+
+# puts "Aliases:"
+# puts zway.aliases
+
+if ARGV.last == "login"
+  zway.login!
+elsif ARGV.last == "aliases"
+  puts "Known Aliases:"
+  zway.aliases.each do |a|
+    a.each do |k,v|
+      puts "#{k} => #{v}"
+    end
+  end
+else
+
+  device_id = ARGV.shift
+
+  while command = ARGV.shift
+    if zway.respond_to?( command.to_sym )
+      zway.send( command.to_sym, device_id )
+    end
+  end
+end
