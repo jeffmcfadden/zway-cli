@@ -17,6 +17,17 @@ Now you can check levels and turn things on and off
     $ zway ZWayVDev_zway_16-0-38 level
     $ zway ZWayVDev_zway_16-0-38 on
 
+Or if you setup aliases:
+
+    $ zway kitchen_lights level
+    > off
+
+    $ zway kitchen_lights on
+    > 200 OK
+
+    $ zway kitchen_lights level
+    > on
+
 ## How to get the Device String for the Aliases, etc. ##
 
 1.  Go to your ZWay smarthome URL.
