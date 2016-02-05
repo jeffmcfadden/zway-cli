@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
-require 'zway'
+require 'zway-cli'
 
 options = {}
 OptionParser.new do |opts|
